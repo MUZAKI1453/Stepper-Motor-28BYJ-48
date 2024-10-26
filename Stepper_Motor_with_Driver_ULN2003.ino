@@ -9,12 +9,12 @@ void setup() {
 }
 
 void loop() {
-  // Rotate cw slowly at 5 rpm
+  // Rotate cw slowly at 5 rpm (rotasi searah jrum jam)
   myStepper.setSpeed(20);
   myStepper.step(stepsPerRevolution);
   delay(1000);
 
-  // Rotate ccw quickly at 10 rpm
+  // Rotate ccw quickly at 10 rpm (rotasi berlawanan jarum jam)
   myStepper.setSpeed(5);
   myStepper.step(-stepsPerRevolution);
   delay(1000);
